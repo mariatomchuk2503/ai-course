@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ШІ у проєктуванні міжпредметного навчання</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><span class="logo__mark">ШІ</span> Курс для педагогів</a>
+      <button class="menu-btn" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="#routes">Маршрути</a>
+        <a href="#program">Програма</a>
+        <a href="#format">Формат</a>
+        <a href="test.html" class="btn btn--small">Пройти тест</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ГОЛОВНИЙ ЕКРАН -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Адаптивний курс підвищення кваліфікації</p>
+          <h1>ШІ у проєктуванні <span class="accent">міжпредметного</span> навчання</h1>
+          <p class="lead">Для педагогів професійного навчання. Вхідний тест підбирає вам маршрут, а завершується курс міжпредметним проєктом для вашої групи.</p>
+          <div class="hero__buttons">
+            <a href="test.html" class="btn">Визначити свій маршрут</a>
+            <a href="#program" class="btn btn--ghost">Програма курсу</a>
+          </div>
+        </div>
+        <ul class="stats">
+          <li><b>30 год</b><span>1 кредит ЄКТС</span></li>
+          <li><b>10</b><span>тижнів, до 2 год на тиждень</span></li>
+          <li><b>3</b><span>маршрути за рівнем</span></li>
+          <li><b>77 %</b><span>часу — практика</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- МАРШРУТИ -->
+    <section id="routes" class="section">
+      <div class="container">
+        <h2>Кожен починає зі свого рівня</h2>
+        <p class="section__lead">Вхідний тест (0–12 балів) визначає маршрут. Рішення підтверджує викладач, а під час курсу маршрут можна змінити.</p>
+
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" data-route="A">А · початковий</button>
+          <button class="tab is-active" role="tab" data-route="B">Б · базовий</button>
+          <button class="tab" role="tab" data-route="C">В · просунутий</button>
+        </div>
+
+        <div class="route-card" id="route-card">
+          <div class="route-card__head">
+            <span class="route-card__score" id="route-score"></span>
+            <h3 id="route-name"></h3>
+            <p id="route-who"></p>
+          </div>
+          <div class="route-card__grid">
+            <div><span class="label">Завдання</span><p id="route-tasks"></p></div>
+            <div><span class="label">Підтримка</span><p id="route-support"></p></div>
+            <div><span class="label">Роль у команді</span><p id="route-role"></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРОГРАМА -->
+    <section id="program" class="section section--alt">
+      <div class="container">
+        <h2>Програма: сім модулів</h2>
+        <div class="modules">
+          <details class="module">
+            <summary><span class="module__num">М0</span> Діагностика</summary>
+            <p>Вхідний тест, самооцінка і вибір маршруту А, Б або В.</p>
+          </details>
+          <details class="module">
+            <summary><span class="module__num">М1</span> ШІ і безпека</summary>
+            <p>Як працює генеративний ШІ, його обмеження, захист персональних даних, етика.</p>
+          </details>
+          <details class="module">
+            <summary><span class="module__num">М2</span> Матеріали з ШІ</summary>
+            <p>Запити до ШІ за схемою «роль – контекст – завдання – формат». Різнорівневі завдання для вашої групи.</p>
+          </details>
+          <details class="module">
+            <summary><span class="module__num">М3</span> Перевірка і доброчесність</summary>
+            <p>Типові помилки ШІ, фактчекінг, перевірка джерел і розрахунків, правила академічної доброчесності.</p>
+          </details>
+          <details class="module">
+            <summary><span class="module__num">М4</span> Міжпредметність</summary>
+            <p>Від мульти- до міждисциплінарних і трансдисциплінарних завдань.</p>
+          </details>
+          <details class="module module--main">
+            <summary><span class="module__num">М5</span> Міжпредметний проєкт</summary>
+            <p>Змішана команда педагогів різних предметів створює заняття чи проєкт для своїх здобувачів і захищає його очно.</p>
+          </details>
+          <details class="module">
+            <summary><span class="module__num">М6</span> Підсумкова діагностика</summary>
+            <p>Повторний тест, рефлексія і порівняння з початковим рівнем.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФОРМАТ -->
+    <section id="format" class="section">
+      <div class="container">
+        <h2>Як влаштоване навчання</h2>
+        <div class="format">
+          <div class="format__item"><b>12 год</b><h3>Онлайн-зустрічі</h3><p>Zoom по 45 хвилин, кожна починається з короткої СЕЕН-практики.</p></div>
+          <div class="format__item"><b>18 год</b><h3>Самостійна робота</h3><p>Завдання в Google Classroom у зручний для вас час.</p></div>
+          <div class="format__item"><b>Очно</b><h3>Захист проєктів</h3><p>Фінальна зустріч, на якій команди представляють проєкти.</p></div>
+        </div>
+
+        <h3 class="subhead">Курс підлаштовується під вас</h3>
+        <ul class="rules">
+          <li><b>Менше 60 %</b> у проміжному завданні — додаткові пояснення і вправи</li>
+          <li><b>Від 85 %</b> — можна пропустити базові вправи</li>
+          <li><b>7 і 14 днів без активності</b> — викладач нагадує і пропонує допомогу</li>
+          <li><b>Команди проєктів</b> — з педагогів різних предметів і рівнів</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ЗАКЛИК -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <div>
+          <h2>Почніть з вхідного тесту</h2>
+          <p>12 питань. Результат одразу покаже ваш маршрут.</p>
+        </div>
+        <a href="test.html" class="btn">Пройти тест</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>Авторка курсу: Марія Суровицька</span>
+      <span>Старт потоку: [ДАТА] · [ЕЛ. ПОШТА]</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

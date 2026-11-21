@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вхідний тест — ШІ у проєктуванні міжпредметного навчання</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><span class="logo__mark">ШІ</span> Курс для педагогів</a>
+      <a href="index.html" class="btn btn--small btn--ghost">← На головну</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container container--narrow">
+      <p class="eyebrow">Модуль М0 · Діагностика</p>
+      <h1 class="test-title">Вхідний тест</h1>
+      <p class="section__lead">12 питань про ШІ, запити, перевірку результатів і доброчесність. За кожну правильну відповідь — 1 бал.</p>
+
+      <div class="progress" aria-hidden="true"><div class="progress__bar" id="progress-bar"></div></div>
+      <p class="progress__text" id="progress-text">Відповідей: 0 з 12</p>
+
+      <form id="test-form" class="test">
+        <!-- питання з'являться тут із script.js -->
+      </form>
+
+      <button type="submit" form="test-form" class="btn btn--wide" id="submit-btn" disabled>Показати результат</button>
+
+      <div id="result" class="result" hidden></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>Авторка курсу: Марія Суровицька</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
